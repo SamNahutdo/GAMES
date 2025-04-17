@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/Qna.css">
+  <title>IT Quiz</title>
+  <style>
+  </style>
+</head>
+<body>
+  <div class="quiz-wrapper">
+    <div class="quiz-header">
+      <a href="index.html" class="exit">X</a>
+      <div>Question <span id="current">1</span>/<span id="total">1</span></div>
+    </div>
+
+    <img id="question-image" src="" alt="Question Image" class="question-img" />
+
+    <div class="question-text" id="question">Loading...</div>
+
+    <div class="options" id="options"></div>
+
+    <div class="score" id="score">Score: 0</div>
+
+    <div class="result-modal" id="resultModal">
+      <div class="result-content">
+        <h2>Quiz Complete!</h2>
+        <p id="finalScore">You scored 0/0</p>
+        <button onclick="restartQuiz()">Play Again</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/Qna.js"></script>
+</body>
+</html>
